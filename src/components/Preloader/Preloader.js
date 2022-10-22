@@ -1,5 +1,5 @@
 import React from 'react';
-import loader from "../img/spinner.gif"
+import loader from "../../img/spinner.gif"
 import "./Preloader.scss"
 
 const Preloader = () => {

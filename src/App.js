@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {getCats} from "./store/catsReducer";
 import CatsList from "./components/CatsList/CatsList";
 import Header from "./components/Header/Header";
-import Preloader from "./Preloader/Preloader";
+import Preloader from "./components/Preloader/Preloader";
 
 const App = () => {
 
