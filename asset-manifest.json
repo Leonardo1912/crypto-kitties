@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/crypto-kitties/static/css/main.8e400f62.css",
+    "main.js": "/crypto-kitties/static/js/main.bdbf6780.js",
+    "static/media/spinner.gif": "/crypto-kitties/static/media/spinner.209b2596de8111eff377.gif",
+    "index.html": "/crypto-kitties/index.html",
+    "main.8e400f62.css.map": "/crypto-kitties/static/css/main.8e400f62.css.map",
+    "main.bdbf6780.js.map": "/crypto-kitties/static/js/main.bdbf6780.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e400f62.css",
+    "static/js/main.bdbf6780.js"
+  ]
+}
