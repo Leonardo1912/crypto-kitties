@@ -65,6 +65,7 @@ export const getSortedCats = (currentSort, directionSort) => {
 }
 export const getCats = (page, currentSort, directionSort) => {
     return async (dispatch) => {
+        dispatch({type: LOADING, payload: true})
         const data = await GetCats(page, 50, currentSort, directionSort)
         dispatch({type: SET_CATS, payload: data})
         dispatch({type: LOADING, payload: false})

@@ -14,13 +14,16 @@ const App = () => {
     const directionSort = useSelector(state => state.catsPage.directionSort)
 
     const [fetching, setFetching] = useState(true)
+    const [scroll, setScroll] = useState(0)
 
     const dispatch = useDispatch()
 
     useEffect(() => {
         if (fetching) {
             dispatch(getCats(page, currentSort, directionSort))
-                .finally(() => setFetching(false))
+                .finally(() => setFetching(false)).then(() => {
+                window.scrollTo({top: scroll})
+            })
         }
     }, [fetching])
 
@@ -34,6 +37,7 @@ const App = () => {
     const scrollHandler = (e) => {
         if (e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 100
             && page !== null) {
+            setScroll(e.target.documentElement.scrollTop)
             setFetching(true)
         }
     }
